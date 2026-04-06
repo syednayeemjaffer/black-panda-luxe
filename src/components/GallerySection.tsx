@@ -1,19 +1,19 @@
 import AnimatedSection from "./AnimatedSection";
 import SectionHeading from "./SectionHeading";
-import heroBg from "@/assets/hero-bg.jpg";
 import galleryDining from "@/assets/gallery-dining.jpg";
 import gallerySpa from "@/assets/gallery-spa.jpg";
-import roomSuite from "@/assets/room-suite.jpg";
+import dishPeking from "@/assets/dish-peking-duck.jpg";
 import dishDimSum from "@/assets/dish-dim-sum.jpg";
 import dishHotpot from "@/assets/dish-hotpot.jpg";
+import dishNoodles from "@/assets/dish-noodles.jpg";
 
 const images = [
-  { src: heroBg, alt: "Grand Lobby", span: "col-span-2 row-span-2" },
-  { src: galleryDining, alt: "Fine Dining", span: "" },
-  { src: gallerySpa, alt: "Spa & Wellness", span: "" },
-  { src: roomSuite, alt: "Imperial Suite", span: "" },
+  { src: galleryDining, alt: "Dining Ambience", span: "col-span-2 row-span-2" },
+  { src: dishPeking, alt: "Peking Duck", span: "" },
   { src: dishDimSum, alt: "Dim Sum", span: "" },
-  { src: dishHotpot, alt: "Hotpot Experience", span: "col-span-2" },
+  { src: gallerySpa, alt: "Restaurant Interior", span: "" },
+  { src: dishNoodles, alt: "Hand-Pulled Noodles", span: "" },
+  { src: dishHotpot, alt: "Sichuan Hotpot", span: "col-span-2" },
 ];
 
 const GallerySection = () => (
@@ -21,8 +21,8 @@ const GallerySection = () => (
     <div className="max-w-7xl mx-auto">
       <SectionHeading
         subtitle="Gallery"
-        title="Moments of Splendor"
-        description="A glimpse into the world of Black Panda — where every corner tells a story of luxury."
+        title="A Feast for the Eyes"
+        description="A glimpse into the world of Black Panda — where every dish and every detail is a work of art."
       />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">

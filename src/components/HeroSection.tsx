@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
 import logo from "@/assets/logo.png";
 
 const HeroSection = () => (
-  <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <div className="absolute inset-0">
-      <img src={heroBg} alt="Black Panda Hotel Lobby" className="w-full h-full object-cover" width={1920} height={1080} />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background" />
+  <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+    {/* Abstract decorative elements */}
+    <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-primary/5 rounded-full" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-primary/[0.03] rounded-full" />
     </div>
 
     <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
@@ -34,7 +36,7 @@ const HeroSection = () => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
       >
-        Where timeless Chinese elegance meets modern luxury. Indulge in authentic cuisine and an unforgettable stay.
+        Authentic Chinese cuisine crafted with passion. Experience the art of flavour in every dish.
       </motion.p>
 
       <motion.div
@@ -47,7 +49,7 @@ const HeroSection = () => (
           href="#contact"
           className="px-8 py-3.5 bg-primary text-primary-foreground rounded-full font-semibold text-base hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 hover:scale-105"
         >
-          Book Your Stay
+          Reserve a Table
         </a>
         <a
           href="#cuisine"
