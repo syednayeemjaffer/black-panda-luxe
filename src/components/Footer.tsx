@@ -12,15 +12,15 @@ const Footer = () => (
             </span>
           </div>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            Where timeless Chinese elegance meets modern luxury hospitality.
+            Authentic Chinese cuisine crafted with passion and tradition.
           </p>
         </div>
 
         <div>
           <h4 className="font-display font-semibold text-foreground mb-4">Quick Links</h4>
           <div className="space-y-2">
-            {["About", "Rooms", "Cuisine", "Gallery", "Contact"].map((link) => (
-              <a key={link} href={`#${link.toLowerCase()}`} className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+            {["About", "Menu", "Gallery", "Reviews", "Contact"].map((link) => (
+              <a key={link} href={`#${link.toLowerCase() === "menu" ? "cuisine" : link.toLowerCase() === "reviews" ? "testimonials" : link.toLowerCase()}`} className="block text-sm text-muted-foreground hover:text-primary transition-colors">
                 {link}
               </a>
             ))}
@@ -40,7 +40,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-border pt-6 text-center">
-        <p className="text-muted-foreground text-xs">© 2026 Black Panda Hotel & Restaurant. All rights reserved.</p>
+        <p className="text-muted-foreground text-xs">© 2026 Black Panda Restaurant. All rights reserved.</p>
       </div>
     </div>
   </footer>

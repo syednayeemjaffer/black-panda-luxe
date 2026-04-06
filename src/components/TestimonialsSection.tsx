@@ -5,8 +5,8 @@ import AnimatedSection from "./AnimatedSection";
 import SectionHeading from "./SectionHeading";
 
 const reviews = [
-  { name: "Elena Zhang", role: "Travel Blogger", text: "An absolutely magical experience. The attention to detail in every room, every dish, every interaction — it's unmatched. Black Panda redefines luxury hospitality.", rating: 5 },
-  { name: "James Carter", role: "Business Executive", text: "The Imperial Suite was breathtaking. I've stayed in five-star hotels worldwide, but Black Panda's blend of Chinese elegance and modern comfort is truly one of a kind.", rating: 5 },
+  { name: "Elena Zhang", role: "Food Blogger", text: "The Peking Duck at Black Panda is hands down the best I've ever had. Every dish is a masterpiece — the flavours are bold yet perfectly balanced.", rating: 5 },
+  { name: "James Carter", role: "Regular Guest", text: "From the dim sum to the hand-pulled noodles, every visit feels like a culinary journey through China. The ambience is unmatched.", rating: 5 },
   { name: "Mei Lin Wu", role: "Food Critic", text: "The dim sum alone is worth the trip. Every dish tells a story of tradition and craftsmanship. The chefs here are genuine artists.", rating: 5 },
 ];
 
@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="section-padding bg-secondary/30">
       <div className="max-w-4xl mx-auto">
-        <SectionHeading subtitle="Guest Reviews" title="Words of Praise" />
+        <SectionHeading subtitle="Reviews" title="What Our Guests Say" />
 
         <AnimatedSection>
           <div className="relative glass-card rounded-2xl p-8 md:p-12">

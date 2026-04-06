@@ -7,8 +7,7 @@ import logo from "@/assets/logo.png";
 const navItems = [
   { label: "Home", href: "#hero" },
   { label: "About", href: "#about" },
-  { label: "Rooms", href: "#rooms" },
-  { label: "Cuisine", href: "#cuisine" },
+  { label: "Menu", href: "#cuisine" },
   { label: "Gallery", href: "#gallery" },
   { label: "Reviews", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
@@ -58,7 +57,7 @@ const Navbar = () => {
             href="#contact"
             className="px-5 py-2 bg-primary text-primary-foreground rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105"
           >
-            Book Now
+            Reserve
           </a>
         </div>
 
@@ -94,7 +93,7 @@ const Navbar = () => {
                 onClick={() => setMobileOpen(false)}
                 className="px-5 py-3 bg-primary text-primary-foreground rounded-full text-sm font-semibold text-center mt-2"
               >
-                Book Now
+                Reserve a Table
               </a>
             </div>
           </motion.div>

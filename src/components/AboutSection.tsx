@@ -1,12 +1,12 @@
 import AnimatedSection from "./AnimatedSection";
 import SectionHeading from "./SectionHeading";
 import galleryDining from "@/assets/gallery-dining.jpg";
-import { Star, Utensils, Crown } from "lucide-react";
+import { Flame, Utensils, Crown } from "lucide-react";
 
 const features = [
-  { icon: Crown, title: "Luxury Hospitality", desc: "Five-star service with a personal touch, blending traditional Chinese warmth with world-class standards." },
-  { icon: Utensils, title: "Authentic Cuisine", desc: "Master chefs craft dishes from centuries-old recipes, using the finest ingredients sourced across China." },
-  { icon: Star, title: "Timeless Elegance", desc: "Every detail — from silk furnishings to jade accents — is curated to evoke the grandeur of Chinese heritage." },
+  { icon: Crown, title: "Heritage Recipes", desc: "Our chefs honour generations of Chinese culinary tradition, bringing centuries-old recipes to life with modern finesse." },
+  { icon: Utensils, title: "Premium Ingredients", desc: "We source the finest ingredients — from hand-pulled noodles to aromatic spices — ensuring every bite is extraordinary." },
+  { icon: Flame, title: "Wok-Fired Perfection", desc: "Each dish is prepared with masterful technique, from high-heat wok cooking to slow-simmered broths that captivate the senses." },
 ];
 
 const AboutSection = () => (
@@ -14,8 +14,8 @@ const AboutSection = () => (
     <div className="max-w-7xl mx-auto">
       <SectionHeading
         subtitle="Our Story"
-        title="A Legacy of Elegance"
-        description="Black Panda is more than a hotel — it's a journey through the heart of Chinese culture, where every moment is steeped in luxury and authenticity."
+        title="The Art of Chinese Cuisine"
+        description="Black Panda is more than a restaurant — it's a culinary journey through the heart of China, where every dish tells a story of tradition and craftsmanship."
       />
 
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mt-8">
